@@ -227,13 +227,17 @@ const changeBG = () => {
   root.style.setProperty('--dark-color-lightness', darkColorLightness);
 }
 Bg1.addEventListener('click', () => {
+  darkColorLightness = '17%';
+  whiteColorLightness = '100%';
+  lightColorLightness = '92%';
   // add active class
   Bg1.classList.add('active');
   // remove active class from the others
   Bg2.classList.remove('active');
   Bg3.classList.remove('active');
+  changeBG();
   // remove customized changes from local storage
-  window.location.reload();
+  // window.location.reload();
 })
 Bg2.addEventListener('click', () => {
   darkColorLightness = '95%';
@@ -259,3 +263,39 @@ Bg3.addEventListener('click', () => {
   Bg1.classList.remove('active');
   changeBG();
 })
+
+// Get the button that opens the modal
+var btn = document.querySelectorAll("button.modal-button");
+
+// All page modals
+var modals = document.querySelectorAll('.modal');
+
+// Get the <span> element that closes the modal
+var spans = document.getElementsByClassName("close");
+
+// When the user clicks the button, open the modal
+for (var i = 0; i < btn.length; i++) {
+ btn[i].onclick = function(e) {
+    e.preventDefault();
+    modal = document.querySelector(e.target.getAttribute("href"));
+    modal.style.display = "block";
+ }
+}
+
+// When the user clicks on <span> (x), close the modal
+for (var i = 0; i < spans.length; i++) {
+ spans[i].onclick = function() {
+    for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+    }
+ }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+     for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+     }
+    }
+}
