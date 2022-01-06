@@ -362,10 +362,8 @@
       background-size: 100%;
       background-attachment: fixed;
       justify-content: center;
-      height: auto;
+      height: 100vh;
       min-height: 100vh;
-      max-width: 100%;
-      width: auto\9; /* ie8 */
     }
     .home .intro
     {
