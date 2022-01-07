@@ -142,8 +142,8 @@
     /*========== Reusable css classes ==========*/
     .section .container
     {
-      padding-top: 2rem;
-      padding-bottom: 1rem;
+      padding-top: 3.90rem;
+      /* padding-bottom: 1rem; */
     }
     .section-title
     {
