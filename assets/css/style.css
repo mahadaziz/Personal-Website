@@ -1455,7 +1455,7 @@
     {
       .home .intro img
     {
-      margin-top: var(--m-0-5);
+      margin-top: -5rem;
     }
       .blog-item,
       .portfolio-item
