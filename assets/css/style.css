@@ -1453,6 +1453,10 @@
     }
     @media only screen and (max-width:576px)
     {
+      .home .intro img
+    {
+      margin-top: 2rem;
+    }
       .blog-item,
       .portfolio-item
       {
