@@ -478,14 +478,30 @@
     /*========== About ==========*/
     .about-img
     {
-      flex: 0 0 25%;
-      max-width: 25%;
+      flex: 0 0 40%;
+      max-width: 40%;
+      
+    }
+    .about-img img
+    {
+      border-radius: 10%;
+      transform: translateY(0);
+      transition: .3s;
+    }
+    .about-img img:hover
+    {
+      transform: translateY(-0.98rem);
     }
     .about-content
     {
-      flex: 0 0 75%;
-      max-width: 75%;
-      
+      flex: 0 0 60%;
+      max-width: 60%;
+      transform: translateY(0);
+      transition: .3s;
+    }
+    .about-content:hover
+    {
+      transform: translateY(-0.98rem);
     }
     .about-content .about-text,
     .about-content .skills
@@ -609,6 +625,13 @@
     {
       flex: 0 0 100%;
       max-width: 100%;
+      border-radius: 10%;
+      transform: translateY(0);
+      transition: .3s;
+    }
+    .timeline-box:hover
+    {
+      transform: translateY(-0.98rem);
     }
     .timeline
     {
