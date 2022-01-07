@@ -377,10 +377,29 @@
     {
       color: var(--color-primary);
     }
+    /* .blog-item .inner 
+    {
+      background:var(--color-white) ;
+      overflow: hidden;
+      border-radius: var(--border-radius);
+      transform: translateY(0);
+      transition: .3s;
+    }
+    .blog-item .inner:hover
+    {
+      transform: translateY(-0.98rem);
+    } */
     .home .intro img
     {
+      margin-top: 5rem;
       margin-bottom: var(--m-1);
       border-radius: 50%;
+      transform: translateY(0);
+      transition: .3s;
+    }
+    .home .intro img:hover
+    {
+      transform: translateY(-0.5rem);
     }
     .home .intro .social-icons
     {
