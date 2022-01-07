@@ -964,6 +964,9 @@
     {
       transform: scale(1);
       transition: 0.3s;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
     .blog-item .thumb:hover img
     {
@@ -1089,7 +1092,8 @@
       height: 100%;
       padding: 1rem 1rem 1rem 0;
       background: none;
-      color: #fff;
+      /* color: #fff; */
+      color: var(--color-black);
       outline: none;
       border: none;
       z-index: 1;
