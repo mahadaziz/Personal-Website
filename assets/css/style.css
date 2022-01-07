@@ -373,9 +373,14 @@
       text-align: center;
       background-attachment: fixed;
     }
+    .home .intro h2 span
+    {
+      color: var(--color-primary);
+    }
     .home .intro img
     {
       margin-bottom: var(--m-1);
+      border-radius: 50%;
     }
     .home .intro .social-icons
     {
@@ -459,8 +464,8 @@
     }
     .about-content
     {
-      flex: 0 0 100%;
-      max-width: 100%;
+      flex: 0 0 75%;
+      max-width: 75%;
       
     }
     .about-content .about-text,
@@ -550,6 +555,7 @@
     .services .service-item img
     {
       margin-bottom: var(--m-0-75);
+      width: 30%;
     }
     .service-item h3
     {
@@ -1519,4 +1525,5 @@
     .lnicolor{
       color: #aaa;
     }
+
 
